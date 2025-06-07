@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static '../static/CSS/Style.css' %}">
+  <link rel="icon" href="{% static '../static/img/logo.png' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static '../static/owlcarousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static '../static/owlcarousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static '../static/CSS/animate.css' %}">
+  <link rel="stylesheet" href="{% static '../static/CSS/animate.min.css' %}">
+  <title>Home || Car-Showroom</title>
+</head>
+
+<body style="background-color:aliceblue; font-family: nunito;">
+
+
+  {% block header %}
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8f70e4;">
+      <a class="navbar-brand" href="index"><img src="{% static '../static/img/logo.png' %}" alt="logo"
+          style="height: 60px; width:100px; border-radius: 5px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white f1" href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white f1" href="{% url 'about' %}">About Us</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-white f1" href="{% url 'service' %}">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white f1" href="{% url 'cars' %}">Our Cars</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white f1" href="{% url 'contactus' %}">Contact Us</a>
+          </li>
+        </ul>
+        <div class="dropdown navbar-nav">
+          <i class="fa-solid fa-circle-user" data-toggle="dropdown" style="font-size: 32px; padding-right:10px"></i>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a href="{% url 'login' %}"><button type="button" class="btn dropdown-item">
+              LOG-IN
+            </button></a>
+            <a href="{% url 'registration' %}"><button type="button" class="btn dropdown-item">
+              Register Now
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  {% endblock header %}
+
+
+  {% block body %}{% endblock body %}
+
+
+
+
+
+
+  {% block modalscripts %}
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+
+  <script src="{% static '../static/owlcarousel/owl.carousel.min.js' %}"></script>
+
+  <script>
+    $(document).ready(function () {
+      var owl = $('#partenerrr');
+      owl.owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        responsive: {
+
+          0: {
+
+            items: 1
+          },
+          375: {
+
+            items: 1
+          },
+          600: {
+
+            items: 3
+          },
+          960: {
+
+            items: 3
+          },
+          1200: {
+
+            items: 4
+          }
+        }
+      });
+    });
+  </script>
+
+
+  <script src="{% static '../static/js/wow.min.js' %}"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nilesh Pandey</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="mb-2">
+            <div class="container">
+              <div class="row">
+                <form method="Post">
+                  {% csrf_token %}
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label>First name</label>
+                      <input type="text" class="form-control" name="fname" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label>Last name</label>
+                      <input type="text" class="form-control" name="lname" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label>City</label>
+                      <input type="text" class="form-control" name="city" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label>Email</label>
+                      <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label>Phone No.</label>
+                      <input type="tel" class="form-control" name="number" required>
+                    </div>
+                  </div>
+                  <center>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </center>
+                </form>
+              </div>
+            </div>
+          </section>
+          <div class="center b2">
+            <a href="tel: +919905267312"><i class="fa-solid fa-phone i"></i></a>
+            <a href="mailto: nileshqaz12@gmail.com" target="_blank"><i class="fa-regular fa-envelope i"></i></a>
+            <a href="https://www.linkedin.com/in/nilesh-kumar-pandey-237212255/" target="_blank"><i
+                class="fa-brands fa-linkedin i"></i></a>
+            <a href="https://instagram.com/pandey_ji_nilesh?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                class="fa-brands fa-instagram i"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100028305621354&mibextid=ZbWKwL" target="_blank"><i
+                class="fa-brands fa-facebook-f i"></i></a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock modalscripts %}
+
+  {% block footer %}
+  <!-- footer -->
+
+
+  <footer class="text-center text-lg-start text-white container-gutter" style="background-color: #1c2331">
+    <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+      <div class="me-5">
+        <span>Get connected with us:</span>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100028305621354&mibextid=ZbWKwL"
+          class="text-white i2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="index" class="text-white i2">
+          <i class="fab fa-google"></i>
+        </a>
+        <a target="_blank" href="https://instagram.com/pandey_ji_nilesh?igshid=OGQ5ZDc2ODk2ZA==" class="text-white i2">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/nilesh-kumar-pandey-237212255/" class="text-white i2">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+    <section style="padding-top: 20px;">
+      <div class="container text-center text-md-start">
+        <div class="row mt-3">
+          <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+            <a href="{% url 'index' %}"> <img src="{% static '../static/img/logo.png' %}" alt="Error"
+                style="height: 50%; width: 100px; margin-top: 25%; margin-bottom:25%;"></a>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr class="mb-1 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff;">
+            <p>
+              <a href="{% url 'about' %}" class="text-white">About Us</a>
+            </p>
+
+            <p>
+              <a href="{% url 'service' %}" class="text-white">Services</a>
+            </p>
+            <p>
+              <a href="{% url 'cars' %}" class="text-white">Our Cars</a>
+            </p>
+            <p>
+              <a href="{% url 'contactus' %}" class="text-white">Contact Us</a>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-4 mx-auto mb-5">
+            <h6 class="text-uppercase fw-bold">Contact Us</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> Chandrapura,Bokaro / GP.Latehar</p>
+            <p><a href="mailto:nileshqaz12@gmail.com"><i class="fas fa-envelope mr-3" style="font-size: 12px;"></i>
+                Email</a></p>
+            <p><a href="tel:9905267312"><i class="fas fa-phone mr-3"></i> +91-9905267312</a></p>
+            <div>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100028305621354&mibextid=ZbWKwL"
+                class="text-white i2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a target="_blank" href="{% url 'index' %}" class="text-white i2">
+                <i class="fab fa-google"></i>
+              </a>
+              <a target="_blank" href="https://instagram.com/pandey_ji_nilesh?igshid=OGQ5ZDc2ODk2ZA=="
+                class="text-white i2">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/nilesh-kumar-pandey-237212255/"
+                class="text-white i2">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h6 class="text-uppercase fw-bold">Business Hours</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <table class="table text-center text-white">
+              <tbody class="fw-normal">
+                <tr>
+                  <td>Mon - Thu :</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat :</td>
+                  <td>8am - 1am</td>
+                </tr>
+                <tr>
+                  <td>Sunday :</td>
+                  <td>Closed!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright :
+      <a class="text-white" href="index">Car-Showroom</a> /
+      <a class="text-white" href="https://www.linkedin.com/in/nilesh-kumar-pandey-237212255/"> Nilesh
+        Pandey</a>
+    </div>
+  </footer>
+  {% endblock footer %}
+
+</body>
+
+</html>

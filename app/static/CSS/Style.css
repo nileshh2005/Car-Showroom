@@ -1,0 +1,162 @@
+@media(max-width:2561px) {
+    .q {
+        padding: 40px 0px;
+    }
+
+    .bx1 {
+        box-shadow: 0px 0px 5px black;
+    }
+
+    .b4 {
+        border-right: 2px solid black;
+    }
+
+    .pc {
+        color: #f99650;
+    }
+
+    .b1 {
+        border-radius: 50px;
+        padding-bottom: 25px;
+    }
+
+    .i {
+        color: goldenrod;
+        font-size: 25px;
+        padding: 2px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .b2 {
+        padding-top: 20px;
+        border-top: 2px dotted;
+    }
+
+    .i:hover {
+        font-size: 30px;
+        padding: 0px 15px;
+        color: #6351ce;
+    }
+
+    .i2 {
+        font-size: 15px;
+        padding-left: 5px;
+    }
+
+    .i2:hover {
+        font-size: 20px;
+    }
+
+    .line1 {
+        width: 49%;
+        color: goldenrod;
+        background-color: goldenrod;
+    }
+
+    .imgh:hover {
+        transform: scale(1.05);
+    }
+
+    .p3 {
+        padding-top: 10px;
+    }
+
+    .b5 {
+        color: white;
+        background-color: #6351ce;
+    }
+
+    .h1 {
+        color: #52c2fa;
+    }
+
+    .f1 {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    .wheel1 img {
+        width: 90px;
+        position: absolute;
+        top: 215px;
+        left: 80px;
+        animation: wheelRotation linear .15s infinite;
+    }
+
+    .wheel2 img {
+        width: 100px;
+        position: absolute;
+        top: 214px;
+        left: 413px;
+        animation: wheelRotation linear .15s infinite;
+
+    }
+}
+
+@media (max-width:1440px) {
+    .t2 {
+        font-size: 32px;
+    }
+
+}
+
+@media(max-width:1025px) {
+    .bx1 {
+        box-shadow: none;
+    }
+
+    .t2 {
+        font-size: 26px;
+    }
+}
+
+@media(max-width:768px) {
+    .h1 {
+        font-size: 35px;
+    }
+
+    .t2 {
+        font-size: 19px;
+    }
+}
+
+@media(max-width:426px) {
+    .b4 {
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+
+    .p2 {
+        padding-top: 15px;
+    }
+
+    .h1 {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:376px) {
+    .h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:321px) {
+    .t1 {
+        font-size: 32px;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+}
+
+
+@keyframes wheelRotation {
+    100% {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% extends "base.html" %}
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static '../static/CSS/Style.css' %}">
+  <link rel="icon" href="{% static '../static/img/logo.png' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static '../static/owlcarousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static '../static/owlcarousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static '../static/CSS/animate.css' %}">
+  <link rel="stylesheet" href="{% static '../static/CSS/animate.min.css' %}">
+  <title>Home || Car-Showroom</title>
+</head>
+
+<body style="background-color:aliceblue; font-family: nunito;">
+  {% block body %}
+  <!-- Slider -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top: 1px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '../static/img/c2.png' %}" class="d-block w-100" alt="Error">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '../static/img/c4.png' %}" class="d-block w-100" alt="Error">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '../static/img/c3.png' %}" class="d-block w-100" alt="Error">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '../static/img/c5.png' %}" class="d-block w-100" alt="Error">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- p -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="center wow slideInLeft h1" data-wow-duration="2s">CAR-SHOWROOM</h1>
+          <hr class="line1">
+          <h5 class="container-fluid wow slideInLeft" data-wow-duration="2s"
+            style="text-align:justify; width:fit-content">
+            <span class="pc">India's best car showroom,</span> a beacon of automotive excellence, is a
+            veritable paradise
+            for
+            those in search of the perfect vehicle. Nestled in the heart of the
+            bustling city, this
+            automotive haven sets the gold standard for a car-buying experience.
+            With a sprawling
+            floor
+            space that rivals the grandeur of a luxury palace, this showroom is a
+            visual masterpiece
+            that showcases the finest vehicles from around the world.<br><br>
+
+            <span class="pc">From sleek and sporty sedans</span> to rugged SUVs and high-performance
+            supercars, this showroom offers
+            a curated
+            selection
+            of vehicles that cater to every taste and preference. The showroom's well-trained staff, who are
+            not just
+            salespeople but passionate automotive enthusiasts, provide an exceptional customer experience.
+            They guide you
+            through the entire car-buying journey, offering in-depth knowledge and personalized
+            recommendations, ensuring
+            that
+            you find the perfect vehicle to suit your lifestyle.
+          </h5>
+
+          <!-- Button -->
+          <div class="b1 center wow slideInUp" data-wow-duration="2s">
+            <button type="button" class="btn b5" data-toggle="modal" data-target="#exampleModal">
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4  wow slideInRight" data-wow-duration="2s">
+          <img src="{% static '../static/img/c17.png' %}" alt="Error" style="height: 70%; width:100%;" class="mt-5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- CARS -->
+  <section class="mt-5">
+    <div class="container-fluid" style="background-color:rgba(235, 215, 170, 0.882);">
+      <h1 class="text-center t1 h1" style="padding-top: 20px;">OUR NEW CARS
+      </h1>
+      <hr class="line1">
+      <div class="row">
+        <div class="col-md-4 wow slideInLeft mb-3" data-wow-duration="3s">
+          <div class="card h-100 c1  imgh">
+            <img src="{% static '../static/img/cr15.jpeg' %}" class="card-img-top" alt="Error">
+            <div class="card-body">
+              <h6 class="center">Maruti Suzuki Fronx</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow slideInUp mb-3" data-wow-duration="3s">
+          <div class="card h-100 c1  imgh">
+            <img src="{% static '../static/img/cr14.jpeg' %}" class="card-img-top" alt="Error">
+            <div class="card-body">
+              <h6 class="center">Mahindra Scorpio N</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow slideInRight mb-3" data-wow-duration="3s">
+          <div class="card" style="width: 100%;">
+            <div class="card h-100 c1  imgh">
+              <img src="{% static '../static/img/cr13.png' %}" class="card-img-top" alt="Error">
+              <div class="card-body">
+                <h6 class="center">Toyota Innova Crysta</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <a href="{% url 'cars' %}"><button type="button" class="btn b5 mb-4">
+            Show More
+          </button></a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Animated Car -->
+  <section>
+    <marquee direction="left" scrollamount="23">
+      <img src="{% static '../static/img/car_body.png' %}" alt="Error">
+      <div class="wheel1">
+        <img src="{% static '../static/img/car_wheel_left.png' %}" alt="Error">
+      </div>
+      <div class="wheel2">
+        <img src="{% static '../static/img/car_wheel_right.png' %}" alt="Error">
+      </div>
+    </marquee>
+  </section>
+
+
+
+
+  <!-- Row -->
+
+  <section>
+    <img src="{% static '../static/img/b1.png' %}" alt="Error" style="width: 100%;">
+  </section>
+
+
+
+
+
+  <!-- card-slider -->
+
+
+  <section class="part">
+    <div class="container-fluid">
+      <h1 id="book" style="padding-top:50px;" class="text-center h1">OUR SERVICES</h1>
+      <hr class="line1">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel" id="partenerrr">
+            <div class="item">
+              <center><img src="{% static '../static/img/c10.jpg' %}" class="img-fluid" alt="dbms">
+                <div style="background-color:rgb(220, 220, 220); padding: 5px">
+                  <h4>Washing</h4>
+                </div>
+              </center>
+            </div>
+
+            <div class="item">
+              <center><img src="{% static '../static/img/c11.jpg' %}" class="img-fluid" alt="dbms">
+                <div style="background-color:rgb(220, 220, 220); padding: 5px">
+                  <h4>Servicing</h4>
+                </div>
+              </center>
+            </div>
+
+            <div class="item">
+              <center><img src="{% static '../static/img/c12.jpg' %}" class="img-fluid" alt="dbms">
+                <div style="background-color:rgb(220, 220, 220); padding: 5px">
+                  <h4>Making Duplicate Key</h4>
+                </div>
+              </center>
+            </div>
+
+            <div class="item">
+              <center><img src="{% static '../static/img/c13.jpg' %}" class="img-fluid" alt="dbms">
+                <div style="background-color:rgb(220, 220, 220); padding: 5px">
+                  <h4>Colouring</h4>
+                </div>
+              </center>
+            </div>
+
+            <div class="item">
+              <center><img src="{% static '../static/img/c14.jpg' %}" class="img-fluid" alt="dbms">
+                <div style="background-color:rgb(220, 220, 220); padding: 5px">
+                  <h4>Document Verification</h4>
+                </div>
+              </center>
+            </div>
+
+            <div class="item">
+              <center><img src="{% static '../static/img/c15.jpg' %}" class="img-fluid" alt="dbms">
+                <div style="background-color:rgb(220, 220, 220); padding: 5px">
+                  <h4>Car Delivery</h4>
+                </div>
+              </center>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Quotes -->
+
+  <section style="background-color: #f58948;">
+    <div class="container">
+      <div class="row  text-center" style="padding: 70px 0px; text-align:justify;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="d-block w-100">The famous sales guru, Zig Ziglar, always makes good points. The
+                idea of “selling” is counter-intuitive to what it takes to gain trust with a client.
+                Gaining trust is the only way you’re going to make the sale. The more you help without
+                trying to sell a product, the more your customer will want to give you their money.<br>
+                <b> ~ Zig Ziglar </b>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100">If there is one thing an excellent salesperson hears all the time,
+                it’s “no, thanks.” That sounds backwards, doesn’t it? Here’s the reason: making sales is
+                not so much about closing every deal, as it is about getting front of the most people.
+                Sales is a numbers game. <br>
+                <b>~ Brian Tracy</b>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100">These car sales motivational quotes are meant to show the
+                importance of understanding your customer’s pain points and developing trust. Those are
+                two important steps in every sales process. The more you listen, the better you will
+                understand how the customer wants to be sold. Do less talking and more paying attention,
+                and your sales numbers will increase. <br>
+                <b>~ Roy Bartel</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- form -->
+
+  <section style="padding: 50px 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="{% static '../static/img/c18.png' %}" alt="Error" style="width: 100%;">
+        </div>
+
+        <div class="col-md-6">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>First name</label>
+                <input type="text" class="form-control" name="fname" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>Last name</label>
+                <input type="text" class="form-control" name="lname" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label>City</label>
+                <input type="text" class="form-control" name="city" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>Phone No.</label>
+                <input type="tel" class="form-control" name="number" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  {% endblock body %}
+</body>
+
+</html>

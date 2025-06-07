@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% extends "base.html" %}
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '../static/CSS/Style.css' %}">
+    <link rel="icon" href="{% static '../static/img/logo.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static '../static/owlcarousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static '../static/owlcarousel/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static '../static/CSS/animate.css' %}">
+    <link rel="stylesheet" href="{% static '../static/CSS/animate.min.css' %}">
+    <title>Our Cars || Car-Showroom</title>
+</head>
+
+<body style="background-color:aliceblue; font-family: nunito;">
+    {% block body %}
+    <!-- CARS -->
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h1 id="book" style="color:yellowgreen" class="text-center t1">OUR CARS
+                    </h1>
+                    <hr class="line1">
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr1.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Vitara Brezza ZXI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi, jharkhand</b>
+                                </p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2021</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Silver, red, black</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr2.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Baleno 1.2 ZETA</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2020</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Grey</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr3.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Dzire ZXI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2021</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>White</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr4.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Dzire VXI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2021</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Gray</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr5.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Vitara Brezza VDI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2019</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Silver</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr6.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Dzire VXI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2019</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Silver</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr7.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Vitara Brezza VDI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2019</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>White</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr8.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Vitara Brezza ZDI</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2019</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>White</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr9.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Baleno 1.2 DELTA</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2018</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>NB</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr11.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Baleno 1.3 DELTA</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2019</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>NB</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr12.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Ciaz SIGMA 1.3 HYBRID</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2018</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Silver</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card mt-2">
+                        <img src="{% static '../static/img/cr10.jpeg' %}" class="card-img-top h1" alt="Error">
+                        <div class="card-body">
+                            <h6 class="center">Ignis DELTA 1.2 MT</h6>
+                            <hr class="line1">
+                            <div class="row row-cols-1">
+                                <p class="card-text col-md-12 col-xl-4">City Of Registration: <b>Ranchi</b></p>
+                                <p class="card-text col-md-12 col-xl-4">Year of Manufacture: <b>2018</b></p>
+                                <div class="col-md-12 col-xl-4">
+                                    <p class="card-text">Color: <b>Grey</b></p>
+                                    <div class="center">
+                                        <button type="button" class="btn b5" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock body %}
+
+</body>
+
+</html>
